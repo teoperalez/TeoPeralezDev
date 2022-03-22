@@ -36,7 +36,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a front-end developer based in Japan!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -44,7 +44,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Teo Peralez
           </Heading>
-          <p>Digital Creator ( Artist / Developer / Designer )</p>
+          <p>Digital Creator ( Musician / Developer / Content Creator )</p>
         </Box>
         <Box
           flexShrink={0}
