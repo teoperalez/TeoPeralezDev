@@ -3,62 +3,64 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbFishWorkflow from '../public/images/links/youtube.png'
-import thumbMyDeskSetup from '../public/images/links/youtube.png'
-import thumb500PaidUsers from '../public/images/links/youtube.png'
-import thumbFinancialGoal from '../public/images/links/youtube.png'
-import thumbHowToPriceYourself from '../public/images/links/youtube.png'
-import thumb50xFaster from '../public/images/links/youtube.png'
+import thumbBetterCharts from '../public/images/contents/make-better-charts.jpg'
+import thumbFullBacktest from '../public/images/contents/RSIBB-backtest.jpg'
+import thumbOnix from '../public/images/contents/Onix.jpg'
+import thumbPersian from '../public/images/contents/Persian.jpg'
+import thumbBrock from '../public/images/contents/brock-minimum-battles.jpg'
+
 
 const Posts = () => (
   <Layout title="Posts">
     <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
+      <Heading as="h2" fontSize={28} mt={10} mb={8}>
         Popular Posts
       </Heading>
 
       <Section delay={0.1}>
+        <Heading as="h3" fontSize={20} mb={4}>
+          ThinkTradeProfit.com
+        </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="My Fish workflow"
-            thumbnail={thumbFishWorkflow}
-            href="https://www.youtube.com/watch?v=KKxhf50FIPI"
+            title="Make Better Charts"
+            thumbnail={thumbBetterCharts}
+            href="https://www.thinktradeprofit.com/posts/make-better-charts"
           />
           <GridItem
-            title="My desk setup (Late 2020)"
-            thumbnail={thumbMyDeskSetup}
-            href="https://www.youtube.com/watch?v=1OFDMwDlnOE"
+            title="Full Backtest: RSI + 200EMA VS RSI + BB + 200EMA"
+            thumbnail={thumbFullBacktest}
+            href="https://youtu.be/w8mcKLcR3_M"
           />
         </SimpleGrid>
       </Section>
 
       <Section delay={0.3}>
+        <Heading as="h3" fontSize={20} mb={4}>
+          RBY Pokemon Challenges
+        </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
-            thumbnail={thumb500PaidUsers}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            title="Onix - Could Brock Beat Rival 5? #MinimumBattles"
+            thumbnail={thumbOnix}
+            href="https://youtu.be/w8mcKLcR3_M"
+          />    
+          <GridItem
+            title="Persian - Is Even HYPER BEAM Enough!?!?! #MinimumBattles"
+            thumbnail={thumbPersian}
+            href="https://youtu.be/Smf3cTdr1xs"
           />
           <GridItem
-            title="I stopped setting a financial goal for my SaaS"
-            thumbnail={thumbFinancialGoal}
-            href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
-          />
+            title="Only 3 Battles to Beat Brock? Testing every RBY Pokemon, Max DVs and 0DVs!"
+            thumbnail={thumbBrock}
+            href="https://youtu.be/v-cLZTatDEc"
+          />      
         </SimpleGrid>
       </Section>
 
       <Section delay={0.5}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="How to Price Yourself as a Freelance Developer"
-            thumbnail={thumbHowToPriceYourself}
-            href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
-          />
-          <GridItem
-            title="I made my React Native app 50x faster"
-            thumbnail={thumb50xFaster}
-            href="https://www.youtube.com/watch?v=vj723NlrIQc"
-          />
+          
         </SimpleGrid>
       </Section>
     </Container>

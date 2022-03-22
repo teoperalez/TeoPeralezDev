@@ -5,24 +5,20 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbRBYPC from '../public/images/works/RBYPC.png'
 import thumbThinkTrade from '../public/images/works/TTP.png'
-import thumbFourPainters from '../public/images/links/youtube.png'
-import thumbMenkiki from '../public/images/links/youtube.png'
-import thumbModeTokyo from '../public/images/links/youtube.png'
-import thumbStyly from '../public/images/links/youtube.png'
-import thumbPichu2 from '../public/images/links/youtube.png'
-import thumbFreeDBTagger from '../public/images/links/youtube.png'
-import thumbAmembo from '../public/images/links/youtube.png'
+import thumbBudget from '../public/images/works/budget.png'
+import thumbTeoYuriko from '../public/images/works/teoandyuriko.png'
 
 const Projects = () => (
   <Layout title="Projects">
     <Container>
       <Heading as="h3" fontSize={20} mt={14} mb={4}>
-        Projects
+        Production Projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="rbypc" title="RBYPC" thumbnail={thumbRBYPC}>
+          <br />
           A Pokemon project that is broadcast on Youtube. The accompanying NextJS Website utilizes Framer Motion, API routes, global states, local storage, and custom hooks.
           </WorkGridItem>
         </Section>
@@ -32,83 +28,45 @@ const Projects = () => (
             title="Think. Trade. Profit."
             thumbnail={thumbThinkTrade}
           >
-            Technical indicator coding for retail investors.
+            <br />
+            Technical stock trading indicator coding for retail investors.  Built on th NextJS Blog template, it includes an API for accessing indicator code and uses Markdown in the Blog Posts section.
           </WorkGridItem>
         </Section>
 
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
-            thumbnail={thumbFourPainters}
-          >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
       </SimpleGrid>
 
       <Section delay={0.2}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Course Projects
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+        <WorkGridItem
+            id="weddingalbum"
+            thumbnail={thumbTeoYuriko}
+            title="Digital Wedding Album"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            <br />
+            A custom digital wedding album in NextJS with custom Framer Motion Modal and custom Framer Motion Slider.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old projects
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="budget"
+            thumbnail={thumbBudget}
+            title="Budget App"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+            <br />
+            A budget app using custom hooks, local storage, and the react-bootstrap library.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
+
+      
     </Container>
   </Layout>
 )

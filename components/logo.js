@@ -22,7 +22,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/TePeDev_Logo_2.png`
+  const logoImg = `/images/TePeDev_Logo_2.png`
 
   return (
     <Link href="/" scroll={false}>
@@ -30,7 +30,7 @@ const Logo = () => {
         <LogoBox
           
         >
-          <Image src={footPrintImg} width={80} height={80} alt="logo" />
+          <Image src={logoImg} width={80} height={80} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
