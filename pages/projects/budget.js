@@ -51,7 +51,7 @@ const Work = () => (
         <br />
         <Heading as="h3" fontSize={20} mb={4} gridColumnStart={1}>Uncategorized Expenses Catch</Heading>
         
-        <p>Deleted budgets are automatically recategorized as "Uncategorized Expenses" when deleted, and can be reassigned thereafter.</p>
+        <p>Deleted budgets are automatically recategorized as &quot;Uncategorized Expenses&quot; when deleted, and can be reassigned thereafter.</p>
         <br />
         <ProjectImage src="/images/works/uncategorized.png" alt="Budget App Uncategorized" />
 
